@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" type="text/css" href="Ville.css"></link>
+         <title>Ville Home</title>
+         <header> <a href="Menu.html"> </a></header>
+         <nav class="navbar" style="text-align: center;">
+         <ul>
+            <li><a href="Home.html">Home </a></li>
+              <li><a href="#aboutus">About us</a></li>
+              <li><a href="Menu.html" >View Menu</a></li>
+              <li><a href="#res" >Reserve a table </a></li>
+              <li><a href="#contact">Contact us</a></li>
+        </ul>
+        </nav>
+      </head>
+      <body style="background-color: black;"> 
+      <div class="first" style="background-image: url('./assets/images/bckgrndd.jpg'); background-size: cover;">
+        <div>
+         <main>
+            <div class="img1">
+                <img src="./assets/images/fh.png" alt="Image" width="400px" height="300px">
+                <img src="./assets/images/food1.png" alt="Image" width="370px" height="310px">
+              </div> <br>
+              <h1  style="font-size: 46px;">&nbsp; &nbsp; &nbsp; &nbsp;Taste Lebanese<br> &nbsp; &nbsp; &nbsp; &nbsp;cuisine together<br> &nbsp; &nbsp; &nbsp; &nbsp;with<span style="color:rgb(146, 105, 44);">Ville</span></h1>
+                <h5>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#x23f0;  9:00 - 20:00 &nbsp;&nbsp;&nbsp;&#x1f4cd; Beirut, Lebanon</h5>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<button class="but1"><a href="Menu.html" style=" color: white;">Explore our Menu</a></button>
+            </div><br><br><br><br><br>
+        <br><br><div class="title" id="aboutus"><p>About Us</p></div>
+     </div>
+     <div class="container">
+      <div class="boximg">
+        <img src="./assets/images/res.jpg"  alt="img" width="290px" height="350px">
+        
+     </div>
+     <img class="ros" src="./assets/images/ros.png" alt="img" width="290px" height="350px">
+     <div class="textbox">
+      <h1 style=" color: rgb(146, 105, 44);"> About us</h1>
+      <p style=" color: white;"> Prepare your taste buds for a culinary journey like no other. Our carefully crafted menu features some
+        masterpieces that promises to delight your senses.</p>
+        <p style=" color: white;">Join us for an unforgettable dining experience. Explore our menu and get ready to leave craving for more.</p>
+        <button class="but1"><a href="Menu.html" style=" color: white;">Explore our Menu</a></button>
+     </div>
+    </div>
+
+    <div class="title" id="res"><p>Reserve a Table</p></div>
+            <div  class="container">
+            <div class="left">
+                <form method="post" action='https://register-demo.freecodecamp.org'>
+                  <fieldset>
+                    <h1 id="Regist">Reserve a table now!</h1>
+                    <label for="first-name"  style="color: white;">Enter your Full Name: <input id="first-name" name="first-name" type="text" required /></label>
+                    <label for="number"  style="color: white;">Contact Number: <input id="last-name" name="last-name" type="text" required /></label>
+                    <script>
+                        function validateDigits(event) {
+                            const inputElement = event.target;
+                            const inputValue = inputElement.value;
+                            const onlyDigits = inputValue.replace(/\D/g, '');
+                
+                            if (onlyDigits !== inputValue) {
+                                inputElement.value = onlyDigits;
+                                document.getElementById('error-message').style.display = 'block';
+                            } else {
+                                document.getElementById('error-message').style.display = 'none';
+                            }
+                        }
+                    </script>
+                    <label for="email"  style="color: white;">Your Email: <input id="email" name="email" type="email" required /></label>
+                    <label for="number"  style="color: white;">Enter number of people:<input type="number" id="peopleCount" name="peopleCount" min="1" max="15" step="1"></label>label
+                    <label for="bio" style="color: white;">Special instructions:
+                      <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Any special request?"></textarea>
+                    </label>
+                  </fieldset>
+                  <fieldset>
+                    <input id="terms-and-conditions"  style="color: white;" type="checkbox" required name="terms-and-conditions" class="inline" /><p style="color: white;">I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></p>
+                </fieldset>
+                  <input type="submit" class="bb" value="Submit" />
+                </form>
+            </div>
+                <div class="right">
+                <br><br><h1 id="contact">Contact Us</h1>
+                <p style="color: white;"> <span style="color:rgb(146, 105, 44);">phone number:</span><br>(+961) 76 836 679</p><br>
+                <p style="color: white;"><span style="color:rgb(146, 105, 44);">Email:</span><br>Info@Ville.ge</p><br>
+                <p style="color: white;"><span style="color:rgb(146, 105, 44);">Schedule:</span><br>9:00-20:00</p><br>
+
+                <button class="but1" style="color: white;">Request a call</button>
+                </div>
+                <div class="img2">
+                  <img src="./assets/images/food2.png" alt="res" width="220px" height="390px">
+                </div>
+            </div>
+            <footer class="footer">
+              <div class="footer-content">
+                <div class="footer-section">
+                  <h2 style="color: rgb(146, 105, 44);"> Schedule<br></h2>
+                  <p>Monday-Sunday</p>
+                  <p>9:00am-11:00pm</p>
+                </div>
+                <div class="footer-section">
+                  <h2 style="color: rgb(146, 105, 44);">Contact</h2>
+                  <p>Email: info@example.com</p>
+                  <p>Phone: +961 76871181</p>
+                </div>
+                <div class="footer-section">
+                  <h2 style="color: rgb(146, 105, 44);">Follow Us</h2>
+                  <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                  </ul>
+                </div>
+              </div><br><br>
+              <p class="footer-bottom">&copy; 2023 Ville Website. All rights reserved.</p>
+            </footer>
+    </body>
+    </html>

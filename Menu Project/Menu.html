@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ville Home</title>
+        <link rel="stylesheet" type="text/css" href="Ville.css"></link>
+    <body style="background-color: black;"> 
+        <div>
+        <header> <a href="Menu.html"> </a></header>
+        <nav class="navbar" style="text-align: center; " >
+        <ul>
+            <li><a href="Home.html">Home </a></li>
+              <li><a href="#sala">Salads</a></li>
+              <li><a href="#app" >Appetizers</a></li>
+              <li><a href="#plat" >Platters </a></li>
+              <li><a href="#des">Desserts </a></li>
+              <li><a href="#bev" >Beverages </a></li>
+              <li><button class="but1"><a href="#cart" style=" color: white; ;">View Shopping Cart</a></button></li>
+        </ul>
+        </nav>
+        </header>
+        <div>
+            <main>
+            
+        <div id="menu">
+          <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: rgb(146, 105, 44);
+                margin: 0;
+                padding: 0;
+            }
+    
+            .container {
+              max-width: 900px;
+              margin: 0 auto;
+              padding: 30px;
+              display: grid;
+              grid-template-columns: repeat(4, minmax(250px, 1fr));
+              gap: 30px;
+            }
+
+            .item {
+                background-color: rgb(146, 105, 44);
+                box-shadow: 4px 4px 8px rgb(0, 0, 0);
+                border-radius: 5px;
+                padding: 10px;
+                text-align: center;
+                background-color: #fff;
+                width: 225px; 
+                height: 300px;
+            }
+    
+            .item img {
+                max-width: 100%;
+                height: auto;
+            }
+    
+            .item h2 {
+                margin: 0;
+            }
+  
+            .add-to-cart {
+                background-color: rgb(146, 105, 44);
+                color: rgb(255, 255, 255);
+                border: none;
+                border-radius: 5px;
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+            .add-to-cart:hover {
+                background-color: rgb(219, 165, 83);;
+            }
+    
+            .cart {
+                margin-top: 40px;
+                background-color: rgb(146, 105, 44);
+                border: 1px solid #000000;
+                border-radius: 5px;
+                padding: 20px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                max-width: auto;
+                overflow-y: auto; 
+            }
+            p {
+              color: black;
+             }
+                
+
+        </style>
+    </head>
+    <body>
+      <div class="title" id="sal"><br><br><br>Salads</div>
+        <div class="container" style="margin:5%;">
+            <div class="item" id="Salads">
+                <img src="./assets/images/fatouch.jpg" alt="Salads" width="240px" height="200px">
+                <h3>Fatouch</h3>
+                <p></p>
+                <p>Price: $5</p>
+                <button class="add-to-cart" onclick="addToCart('Salads 1', 5)">Add to Cart</button>
+              </div>
+              <div class="item" id="Salads">
+                <img src="./assets/images/tabouli.jpg" alt="Salads" width="240px" height="200px">
+                <h3>Tabouli</h3>
+                <p></p>
+                <p>Price: $6</p>
+                <button class="add-to-cart" onclick="addToCart('Salads 1', 6)">Add to Cart</button>
+              </div>
+              <div class="item" id="Salads">
+                <img src="./assets/images/freekeh salad.jpg" alt="Salads" width="240px" height="200px">
+                <h3>Frekeh Salad</h3>
+                <p></p>
+                <p>Price: $12</p>
+                <button class="add-to-cart" onclick="addToCart('Salads 1', 12)">Add to Cart</button>
+              </div>
+              <div class="item" id="Salads">
+                <img src="./assets/images/salmon salad.jpg" alt="Salads" width="240px" height="200px">
+                <h3>Salmon Salad</h3>
+                <p></p>
+                <p>Price: $16</p>
+                <button class="add-to-cart" onclick="addToCart('Salads 1', 16)">Add to Cart</button>
+              </div>
+              
+          </div>
+      <div class="title" id="app"><br><br><br>Appetizers</div>
+        <div class="container" style="margin:5%;">
+            <div class="item" id="appetizer">
+                <img src="./assets/images/Hummus.jpg" alt="Appetizer" width="240px" height="200px">
+                <h3>Hummus</h3>
+                <p></p>
+                <p>Price: $5</p>
+                <button class="add-to-cart" onclick="addToCart('Hummus', 5)">Add to Cart</button>
+              </div>
+              <div class="item" id="appetizer">
+                <img src="./assets/images/potato mix.jpg" alt="Appetizer" width="240px" height="200px">
+                <h3>Potato mix</h3>
+                <p></p>
+                <p>Price: $4</p>
+                <button class="add-to-cart" onclick="addToCart('Potato mix', 4)">Add to Cart</button>
+              </div>
+              <div class="item" id="appetizer">
+                <img src="./assets/images/Loubieh.jpg" alt="Appetizer" width="240px" height="200px">
+                <h3>Loubieh</h3>
+                <p></p>
+                <p>Price: $4.5</p>
+                <button class="add-to-cart" onclick="addToCart('Loubieh', 4.5)">Add to Cart</button>
+              </div>
+              <div class="item" id="appetizer">
+                <img src="./assets/images/kebbeh.jpg" alt="Appetizer" width="240px" height="200px">
+                <h3>raw kebbeh</h3>
+                <p></p>
+                <p>Price: $7</p>
+                <button class="add-to-cart" onclick="addToCart('raw kebbeh', 7)">Add to Cart</button>
+              </div>
+              <div class="item" id="appetizer">
+                <img src="./assets/images/Hendbeh.jpg" alt="Appetizer" width="240px" height="200px">
+                <h3>Hendbeh</h3>
+                <p></p>
+                <p>Price: $5</p>
+                <button class="add-to-cart" onclick="addToCart('Hendbeh', 5)">Add to Cart</button>
+              </div>
+              <div class="item" id="appetizer">
+                <img src="./assets/images/vine leaves.jpg" alt="Appetizer" width="240px" height="200px">
+                <h3>Vine Leaves</h3>
+                <p>Price: $6</p>
+                <button class="add-to-cart" onclick="addToCart('Vine Leaves', 6)">Add to Cart</button>
+              </div>
+              <div class="item" id="appetizer">
+                <img src="./assets/images/Bo.jpg" alt="Appetizer" width="240px" height="200px">
+                <h3>Boneless chicken</h3>
+                <p>Price: $8</p>
+                <button class="add-to-cart" onclick="addToCart('Boneless chicken', 8)">Add to Cart</button>
+              </div>
+              <div class="item" id="appetizer">
+                <img src="./assets/images/falafel.jpg" alt="Appetizer" width="240px" height="200px">
+                <h3>Falafel</h3>
+                <p>Price: $6.5</p>
+                <button class="add-to-cart" onclick="addToCart('Falafel', 6.5)">Add to Cart</button>
+              </div>
+              <div class="item" id="appetizer">
+                <img src="./assets/images/fries.jpg" alt="Appetizer" width="240px" height="200px">
+                <h3>Fries</h3>
+                <p>Price: $4</p>
+                <button class="add-to-cart" onclick="addToCart('Fries', 6.5)">Add to Cart</button>
+              </div>
+              <div class="item" id="appetizer">
+                <img src="./assets/images/fried kebbeh.jpg" alt="Appetizer" width="240px" height="200px">
+                <h3>Fried Kebbeh</h3>
+                <p>Price: $5.5</p>
+                <button class="add-to-cart" onclick="addToCart('Fried Kebbeh', 5.5)">Add to Cart</button>
+              </div>
+              <div class="item" id="appetizer">
+                <img src="./assets/images/cheese rolls.jpg" alt="Appetizer" width="240px" height="200px">
+                <h3>Cheese Rolls</h3>
+                <p>Price: $5.5</p>
+                <button class="add-to-cart" onclick="addToCart('Cheese Rolls', 5.5)">Add to Cart</button>
+              </div>
+              <div class="item" id="appetizer">
+                <img src="./assets/images/chilli potatoes.jpg" alt="Appetizer" width="240px" height="200px">
+                <h3>Chilli Potatoes</h3>
+                <p>Price: $6.5</p>
+                <button class="add-to-cart" onclick="addToCart('Chilli Potatoes', 6.5)">Add to Cart</button>
+              </div>
+          </div>
+          <head>
+      <body><br><br>
+        <div class="title" id="plat"><br><br>Platters</div>
+          <div class="container" style="margin:5%;">
+              <div class="item" id="Platters">
+                  <img src="./assets/images/shawarma.jpg" alt="Platters" width="240px" height="200px">
+                  <h3>Shawarma</h3>
+                  <p></p>
+                  <p>Price: $18</p>
+                  <button class="add-to-cart" onclick="addToCart('Platters 1', 18)">Add to Cart</button>
+                </div>
+                <div class="item" id="Platters">
+                  <img src="./assets/images/mixed grill.jpg" alt="Platters" width="240px" height="200px">
+                  <h3>Mixed Grill</h3>
+                  <p></p>
+                  <p>Price: $22</p>
+                  <button class="add-to-cart" onclick="addToCart('Platters 1', 22)">Add to Cart</button>
+                </div>
+                <div class="item" id="Platters">
+                  <img src="./assets/images/grilled meat.jpg" alt="Platters" width="240px" height="200px">
+                  <h3>Grilled Meat</h3>
+                  <p></p>
+                  <p>Price: $22</p>
+                  <button class="add-to-cart" onclick="addToCart('Platters 1', 22)">Add to Cart</button>
+                </div>
+                <div class="item" id="Platters">
+                  <img src="./assets/images/kebab.jpg" alt="Platters" width="240px" height="200px">
+                  <h3>Kebab</h3>
+                  <p></p>
+                  <p>Price: $12</p>
+                  <button class="add-to-cart" onclick="addToCart('Platters 1', 12)">Add to Cart</button>
+                </div>
+                <div class="item" id="Platters">
+                  <img src="./assets/images/shish tawouk.jpg" alt="Platters" width="240px" height="200px">
+                  <h3>Tawouk</h3>
+                  <p></p>
+                  <p>Price: $15</p>
+                  <button class="add-to-cart" onclick="addToCart('Platters 1', 15)">Add to Cart</button>
+                </div>
+                <div class="item" id="Platters">
+                  <img src="./assets/images/boneless chicken.jpg" alt="Platters" width="240px" height="200px">
+                  <h3>Boneless Chicken</h3>
+                  <p>Price: $16</p>
+                  <button class="add-to-cart" onclick="addToCart('Platters 1', 16)">Add to Cart</button>
+                </div>
+                <div class="item" id="Platters">
+                  <img src="./assets/images/grilled shrimp.jpg" alt="Platters" width="240px" height="200px">
+                  <h3>Grilled shrimp</h3>
+                  <p>Price: $22</p>
+                  <button class="add-to-cart" onclick="addToCart('Platters 1', 22)">Add to Cart</button>
+                </div>
+                <div class="item" id="Platters">
+                  <img src="./assets/images/Lamb culets.jpg" alt="Platters" width="240px" height="200px">
+                  <h3>Lamb Culets</h3>
+                  <p>Price: $23</p>
+                  <button class="add-to-cart" onclick="addToCart('Platters 1', 23)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="title" id="des"><br><br><br> Desserts</div>
+            <div class="container" style="margin:5%;">
+                <div class="item" id="Desserts">
+                    <img src="./assets/images/Kneffeh.jpg" alt="Desserts" width="240px" height="200px">
+                    <h3>Kneffeh</h3>
+                    <p></p>
+                    <p>Price: $8</p>
+                    <button class="add-to-cart" onclick="addToCart('Desserts 1', 8)">Add to Cart</button>
+                  </div>
+                  <div class="item" id="Desserts">
+                    <img src="./assets/images/mouash.jpg" alt="Desserts" width="240px" height="200px">
+                    <h3>mouash</h3>
+                    <p></p>
+                    <p>Price: $10</p>
+                    <button class="add-to-cart" onclick="addToCart('Desserts 1', 10)">Add to Cart</button>
+                  </div>
+                  <div class="item" id="Desserts">
+                    <img src="./assets/images/pain perdu.jpg" alt="Desserts" width="240px" height="200px">
+                    <h3>Pain Perdu</h3>
+                    <p></p>
+                    <p>Price: $8</p>
+                    <button class="add-to-cart" onclick="addToCart('Desserts 1', 8)">Add to Cart</button>
+                  </div>
+                  <div class="item" id="Desserts">
+                    <img src="./assets/images/fondant au chocolat.jpg" alt="Desserts" width="240px" height="200px">
+                    <h3>Fondant Au chocolat</h3>
+                    <p></p>
+                    <p>Price: $10</p>
+                    <button class="add-to-cart" onclick="addToCart('Desserts 1', 10)">Add to Cart</button>
+                  </div>
+                  <div class="item" id="Desserts">
+                    <img src="./assets/images/karabig.jpg" alt="Desserts" width="240px" height="200px">
+                    <h3>Karabig</h3>
+                    <p></p>
+                    <p>Price: $9</p>
+                    <button class="add-to-cart" onclick="addToCart('Desserts 1', 9)">Add to Cart</button>
+                  </div>
+                  <div class="item" id="Desserts">
+                    <img src="./assets/images/crepe.jpg" alt="Desserts" width="240px" height="200px">
+                    <h3>Crepe</h3>
+                    <p></p>
+                    <p>Price: $7</p>
+                    <button class="add-to-cart" onclick="addToCart('Desserts 1', 7)">Add to Cart</button>
+                  </div>
+                  <div class="item" id="Desserts">
+                    <img src="./assets/images/waffle.jpg" alt="Desserts" width="240px" height="200px">
+                    <h3>waffle</h3>
+                    <p></p>
+                    <p>Price: $8</p>
+                    <button class="add-to-cart" onclick="addToCart('Desserts 1', 8)">Add to Cart</button>
+                  </div>
+                  <div class="item" id="Desserts">
+                    <img src="./assets/images/brownie.jpg" alt="Desserts" width="240px" height="200px">
+                    <h3>Brownie</h3>
+                    <p></p>
+                    <p>Price: $9</p>
+                    <button class="add-to-cart" onclick="addToCart('Desserts 1', 9)">Add to Cart</button>
+                  </div>
+                  
+              </div>
+              <div class="title" id="bev"><br><br><br>Beverages</div>
+        <div class="container" style="margin:5%;">
+            <div class="item" id="Beverages">
+                <h3>Still Water Large</h3>
+                <img src="./assets/images/water.jpg" alt="beverage" width="240px" height="200px">
+                <p>water</p>
+                <p>Price: $1.5</p>
+                <button class="add-to-cart" onclick="addToCart('Beverages 1', 1.5)">Add to Cart</button>
+              </div>
+              <div class="item" id="Beverages">
+                <h3>Sparkling Water</h3>
+                <img src="./assets/images/sparkling water.jpg" alt="beverage" width="240px" height="200px">
+                <p>sparkling water</p>
+                <p>Price: $2</p>
+                <button class="add-to-cart" onclick="addToCart('Beverages 1', 2)">Add to Cart</button>
+              </div>
+              <div class="item" id="Beverages">
+                <h3>Soft drinks</h3>
+                <img src="./assets/images/soft drinks.jpg" alt="beverage" width="240px" height="200px">
+                <p>soft drinks</p>
+                <p>Price: $2</p>
+                <button class="add-to-cart" onclick="addToCart('Beverages 1', 2)">Add to Cart</button>
+              </div>
+              <div class="item" id="Beverages">
+                <h3>Ice Tea</h3>
+                <img src="./assets/images/icetea.jpg" alt="beverage" width="240px" height="200px">
+                <p>ice tea</p>
+                <p>Price: $3</p>
+                <button class="add-to-cart" onclick="addToCart('Beverages 1', 3)">Add to Cart</button>
+              </div>
+              <div class="item" id="Beverages">
+                <h3>Orange Juice</h3>
+                <img src="./assets/images/lemon juice.jpg" alt="beverage" width="240px" height="200px">
+                <p>lemon juice</p>
+                <p>Price: $3</p>
+                <button class="add-to-cart" onclick="addToCart('Beverages 1', 3)">Add to Cart</button>
+              </div>
+              <div class="item" id="Beverages">
+                <h3>Lemonade</h3>
+                <img src="./assets/images/lemonade.jpg" alt="beverage" width="240px" height="200px">
+                <p>lemonade</p>
+                <p>Price: $3</p>
+                <button class="add-to-cart" onclick="addToCart('Beverages 1', 3)">Add to Cart</button>
+              </div>
+              <div class="item" id="Beverages">
+                <h3>Frappe caramel</h3>
+                <img src="./assets/images/frappe caramel.jpg" alt="beverage" width="240px" height="200px">
+                <p>frappe caramel</p>
+                <p>Price: $6</p>
+                <button class="add-to-cart" onclick="addToCart('Beverages 1', 6)">Add to Cart</button>
+              </div>
+              <div class="item" id="Beverages">
+                <h3>Frappe Chocolate</h3>
+                <img src="./assets/images/frappe chocolate.jpg" alt="beverage" width="240px" height="200px">
+                <p>Frappe chocolate</p>
+                <p>Price: $6</p>
+                <button class="add-to-cart" onclick="addToCart('Beverages 1', 6)">Add to Cart</button>
+              </div>
+          </div>
+          </div>
+          <div class="cart" id="cart">
+            <h2 id="cart">Shopping Cart</h2>
+            <ul id="cart-items">
+            </ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+        </div>
+    
+        <script>
+            let cart = [];
+            let total = 0;
+    
+            function addToCart(itemName, itemPrice) {
+                cart.push({ name: itemName, price: itemPrice });
+                total += itemPrice;
+                updateCart();
+            }
+    
+            function updateCart() {
+                const cartItems = document.getElementById("cart-items");
+                const cartTotal = document.getElementById("cart-total");
+    
+                cartItems.innerHTML = "";
+                cart.forEach(item => {
+                    const listItem = document.createElement("li");
+                    listItem.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+                    cartItems.appendChild(listItem);
+                });
+    
+                cartTotal.textContent = total.toFixed(2);
+            }
+        </script>
+      </div>
+        <footer class="footer">
+          <div class="footer-content">
+            <div class="footer-section">
+              <h2 style="color: rgb(146, 105, 44);"> Schedule<br></h2>
+              <p>Monday-Sunday</p>
+              <p>9:00am-11:00pm</p>
+            </div>
+            <div class="footer-section">
+              <h2 style="color: rgb(146, 105, 44);">Contact</h2>
+              <p>Email: info@example.com</p>
+              <p>Phone: +961 76871181</p>
+            </div>
+            <div class="footer-section">
+              <h2 style="color: rgb(146, 105, 44);">Follow Us</h2>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+          </div><br><br>
+          <p class="footer-bottom">&copy; 2023 Ville Website. All rights reserved.</p>
+        </footer>
+
+</main>
+</head>
+</body> 
+</html>
+                
